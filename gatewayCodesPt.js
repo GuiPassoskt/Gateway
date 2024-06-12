@@ -1,25 +1,31 @@
 const GatewayCodesPt = {
     // 10000 - Códigos de erro
-    'CH21': `O código identificador do banco especificado na mensagem está em formato incorreto
-            O identificador do banco é inválido ou está ausente
-            O código da agência é inválido ou está ausente
-            Incompatibilidade entre o BIC do agente credor e o IBAN
-            Ocorreu um erro em %FIELD_NAME_1%
-            A transação não é única`,
-    'RC02': `O código identificador do banco especificado na mensagem está em formato incorreto
-            O identificador do banco é inválido ou está ausente
-            O código da agência é inválido ou está ausente
-            Incompatibilidade entre o BIC do agente credor e o IBAN
-            Ocorreu um erro em %FIELD_NAME_1%
-            A transação não é única`,
+    'CH21': `<ul>
+                <li>O código identificador do banco especificado na mensagem está em formato incorreto</li>
+                <li>O identificador do banco é inválido ou está ausente</li>
+                <li>O código da agência é inválido ou está ausente</li>
+                <li>Incompatibilidade entre o BIC do agente credor e o IBAN</li>
+                <li>Ocorreu um erro em %FIELD_NAME_1%</li>
+                <li>A transação não é única</li>
+            </ul>`,
+    'RC02':  `<ul>
+                <li>O código identificador do banco especificado na mensagem está em formato incorreto</li>
+                <li>O identificador do banco é inválido ou está ausente</li>
+                <li>O código da agência é inválido ou está ausente</li>
+                <li>Incompatibilidade entre o BIC do agente credor e o IBAN</li>
+                <li>Ocorreu um erro em %FIELD_NAME_1%</li>
+                <li>A transação não é única</li>
+             </ul>`,
     'DT01': 'Ocorreu um erro em %FIELD_NAME_1%',
     'AM14': 'Ocorreu um erro em %FIELD_NAME_1%. O valor da transação excede os limites acordados entre o banco e o cliente.',
     'AM06': 'Ocorreu um erro em %FIELD_NAME_1%',
-    'CH16': `A informação de remessa estruturada inclui caracteres alfanuméricos ou mais de 16 dígitos
-            Ocorreu um erro em %FIELD_NAME_1%
-            Código do país inválido
-            QR Code expirado
-            Status do QR Code inativo`,
+    'CH16': `<ul>
+                <li>A informação de remessa estruturada inclui caracteres alfanuméricos ou mais de 16 dígitos</li>
+                <li>Ocorreu um erro em %FIELD_NAME_1%</li>
+                <li>Código do país inválido</li>
+                <li>QR Code expirado</li>
+                <li>Status do QR Code inativo</li>
+            </ul>`,
     'BE15': 'Ocorreu um erro em %FIELD_NAME_1%. ID do proxy não ativo',
     'NARR': 'Ocorreu um erro em %FIELD_NAME_1%',
     // 11000 - Códigos de erro
@@ -155,7 +161,9 @@ const GatewayCodesPt = {
     '9957': 'Mensagem TCH - Conta de financiamento do agente instruído suspensa',
     '9964': 'Mensagem TCH - Identificação de participante inválida',
     // 13000 - Códigos de erro
-    'NARR': `Valor recebido não é o valor acordado ou esperado
-            Falha não categorizada
-            BIC desconhecido na tabela de roteamento`
+    'NARR': `<ul>
+                <li>Valor recebido não é o valor acordado ou esperado</li>
+                <li>Falha não categorizada</li>
+                <li>BIC desconhecido na tabela de roteamento.</li>
+             </ul>`
 }

@@ -1,25 +1,31 @@
 const GatewayCodesEn = {
     // 10000 - Error codes
-    'CH21': `Bank identifier code specified in the message has an incorrect format
-            Bank identifier is invalid or missing
-            Branch code is invalid or missing
-            Creditor Agent BIC and IBAN Mismatch
-            Error occurred on %FIELD_NAME_1%
-            Transaction is not unique`,
-    'RC02': `Bank identifier code specified in the message has an incorrect format
-            Bank identifier is invalid or missing
-            Branch code is invalid or missing
-            Creditor Agent BIC and IBAN Mismatch
-            Error occurred on %FIELD_NAME_1%
-            Transaction is not unique`,
+    'CH21': `<ul>
+                <li>Bank identifier code specified in the message has an incorrect format</li>
+                <li>Bank identifier is invalid or missing</li>
+                <li>Branch code is invalid or missing</li>
+                <li>Creditor Agent BIC and IBAN Mismatch</li>
+                <li>Error occurred on %FIELD_NAME_1%</li>
+                <li>Transaction is not unique</li>
+             </ul>`,
+    'RC02': `<ul>
+                <li>Bank identifier code specified in the message has an incorrect format</li>
+                <li>Bank identifier is invalid or missing</li>
+                <li>Branch code is invalid or missing</li>
+                <li>Creditor Agent BIC and IBAN Mismatch</li>
+                <li>Error occurred on %FIELD_NAME_1%</li>
+                <li>Transaction is not unique</li>
+             </ul>`,
     'DT01': 'Error occurred on %FIELD_NAME_1%',
     'AM14': 'Error occurred on %FIELD_NAME_1% Transaction amount exceeds limits agreed between bank and client.',
     'AM06': 'Error occurred on %FIELD_NAME_1%',
-    'CH16': `Content Remittance information/structured includes either alphanumeric or greater than 16 digits
-            Error occurred on %FIELD_NAME_1%
-            Invalid country code
-            QR Code Expired
-            QR Status Inactive`,
+    'CH16': `<ul>
+                <li>Content Remittance information/structured includes either alphanumeric or greater than 16 digits</li>
+                <li>Error occurred on %FIELD_NAME_1%</li>
+                <li>Invalid country code</li>
+                <li>QR Code Expired</li>
+                <li>QR Status Inactive</li>
+             </ul>`,
     'BE15': 'Error occurred on %FIELD_NAME_1% Proxy ID Not Active',
     'NARR': 'Error occurred on %FIELD_NAME_1%',
     // 11000 - Error codes
@@ -155,7 +161,9 @@ const GatewayCodesEn = {
     '9957': 'TCH Message - Instructed Agent Funding Account suspended',
     '9964': 'TCH Message - Invalid Participant Identification',
     // 13000 - Error codes
-    'NARR': `Amount received is not the amount agreed or expected
-            Uncategorized failure
-            Unknown BIC in routing table`
+    'NARR': `<ul>
+                <li>Amount received is not the amount agreed or expected</li>
+                <li>Uncategorized failure</li>
+                <li>Unknown BIC in routing table</li>
+             </ul>`
 }
